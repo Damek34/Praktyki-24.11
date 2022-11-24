@@ -26,17 +26,28 @@ function multiplyAsync(x,y)
         {
             resolve(x*y);
         }
-    });
+    })
 
 
     zad10.then(() =>
     {
-        console.log(zad10);
+      console.log(zad10);
     });
 
 }
 
 
+/*function zad11()
+{
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((Response) => Response.blob())
+    .then((myBlob))
+    .catch(error() =>{
+        console.error("Wystąpił błąd");
+    })
+}*/
+
+
 console.log("Zad10");
-console.log(multiplyAsync(3, 4));
+console.log(multiplyAsync("i", "kj"));
 
